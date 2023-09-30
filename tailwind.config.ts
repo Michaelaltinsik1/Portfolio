@@ -40,6 +40,8 @@ const config: Config = {
       H1Mobile: '32px',
       H2Mobile: '24px',
       H3Mobile: '20px',
+      navItem: '32px',
+      navItemMobile: '40px',
       body: '16px',
       bodySmall: '14px',
       button: '20px',
