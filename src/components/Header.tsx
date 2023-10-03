@@ -5,7 +5,7 @@ import Nav from './Nav';
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
   return (
-    <header className="flex justify-between bg-secondary p-4">
+    <header className="z-[1000] flex justify-between bg-secondary p-4 h-[135px] sticky top-0 left-0">
       <Image
         className="desktop:ml-[32px]"
         src="/logo.png"

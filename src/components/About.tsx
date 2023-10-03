@@ -10,14 +10,12 @@ const About = () => {
   return (
     <div
       id="about"
-      className="bg-secondary rounded-lg px-4 py-6 desktop:max-w-[1400px] desktop:mx-auto desktop:p-[80px] desktop:my-[80px] "
+      className="bg-secondary rounded-lg px-4 py-6 desktop:max-w-[1400px] desktop:mx-auto desktop:p-[80px] desktop:my-[80px] scroll-m-[350px] "
     >
       <div className="grid desktop:grid-cols-cols-2 desktop:grid-rows-rows-3">
         {<TypeWriterRender />}
-        {/* <div className="bg-tertiary blob max-w-[350px] justify-self-center aspect-square flex items-center justify-center mt-[24px] desktop:max-w-[400px] desktop:col-start-2 desktop:col-end-2 desktop:row-start-1 desktop:row-end-4 desktop:justify-self-end desktop:mt-0"> */}
         <div className="bg-tertiary w-full max-w-[350px] justify-self-center rounded-xl border border-solid border-primary-invert mt-[24px] desktop:col-start-2 desktop:col-end-2 desktop:row-start-1 desktop:row-end-4 desktop:justify-self-end desktop:mt-0">
           <Image
-            // className="image-radius max-w-[80%] h-fit mt-auto"
             className="h-fit w-full rounded-xl max-w-[450px] mt-auto"
             src={Michael}
             alt="Picture of me"
