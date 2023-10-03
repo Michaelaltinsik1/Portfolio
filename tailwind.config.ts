@@ -26,15 +26,23 @@ const config: Config = {
         shadow: '0px 3px 8px 0px #DAC0A3',
       },
     },
+    gridTemplateColumns: {
+      'cols-2': 'repeat(2,1fr)',
+    },
+    gridTemplateRows: {
+      'rows-3': 'repeat(3,fit)',
+    },
     colors: {
       primary: '#F8F0E5',
       secondary: '#EADBC8',
       tertiary: '#DAC0A3',
       'primary-invert': '#0F2C59',
+      'primary-invert-hover': '#0d2750',
+      'primary-invert-active': '#0c2347',
       'secondary-invert': '#924607',
     },
     fontSize: {
-      H1: '48px',
+      H1: '40px',
       H2: '32px',
       H3: '24px',
       H1Mobile: '32px',
@@ -59,6 +67,22 @@ const config: Config = {
       tablet: '769px',
       desktop: '1201px',
       xlDesktop: '2560px',
+    },
+    keyframes: {
+      loaderAnimation: {
+        '0%': { transform: 'scale(1)' },
+        '50%': { transform: 'scale(1.5)' },
+        '100%': { transform: 'scale(1)' },
+      },
+      spin: {
+        '0%': { transform: 'rotate(0deg)' },
+        '100%': { transform: 'rotate(360deg)' },
+      },
+    },
+    // Add the animation class
+    animation: {
+      loader: 'loaderAnimation 1s infinite ease-in-out',
+      spin: 'spin 1.5s linear infinite',
     },
   },
   plugins: [],

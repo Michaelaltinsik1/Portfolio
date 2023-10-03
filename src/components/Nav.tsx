@@ -23,25 +23,28 @@ const Nav = ({ isNavOpen, setIsNavOpen }: NavProps) => {
         />
       )}
       <ul className="flex flex-col mt-[32px] desktop:flex-row desktop:mt-0 ">
-        <li className="">
+        <li>
           <Link
-            className="text-navItemMobile desktop:text-navItem px-4 py-[24px] desktop:px-[32px] flex hover:underline underline-offset-[6px]"
+            onClick={() => setIsNavOpen(false)}
+            className="text-primary-invert text-navItemMobile desktop:text-navItem px-4 py-[24px] desktop:px-[32px] flex hover:underline underline-offset-[6px] decoration-primary-invert"
             href="#about"
           >
             About
           </Link>
         </li>
-        <li className="">
+        <li>
           <Link
-            className="text-navItemMobile desktop:text-navItem px-4 py-[24px] desktop:px-[32px] flex hover:underline underline-offset-[6px]"
+            onClick={() => setIsNavOpen(false)}
+            className="text-primary-invert text-navItemMobile desktop:text-navItem px-4 py-[24px] desktop:px-[32px] flex hover:underline underline-offset-[6px] decoration-primary-invert"
             href="#projects"
           >
             Projects
           </Link>
         </li>
-        <li className="">
+        <li>
           <Link
-            className="text-navItemMobile desktop:text-navItem px-4 py-[24px] desktop:px-[32px] flex hover:underline underline-offset-[6px]"
+            onClick={() => setIsNavOpen(false)}
+            className="text-primary-invert text-navItemMobile desktop:text-navItem px-4 py-[24px] desktop:px-[32px] flex hover:underline underline-offset-[6px] decoration-primary-invert"
             href="#contact"
           >
             Contact

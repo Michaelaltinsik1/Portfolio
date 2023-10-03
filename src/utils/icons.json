@@ -1,0 +1,82 @@
+[
+  {
+      "src": "/react.svg",
+      "description": "React",
+      "alt": "React icon"
+  },
+  {
+      "src": "/nextjs.svg",
+      "description": "Next.js",
+      "alt": "Next.js"
+  },
+  {
+      "src": "/typescript.svg",
+      "description": "TypeScript",
+      "alt": "TypeScript"
+  },
+  {
+      "src": "/tailwind.svg",
+      "description": "Tailwind",
+      "alt": "Tailwind"
+  },
+  {
+      "src": "/nodejs.svg",
+      "description": "Node.js",
+      "alt": "Node.js"
+  },
+  {
+      "src": "/express.svg",
+      "description": "Express.js",
+      "alt": "Express.js"
+  },
+  {
+      "src": "/git.svg",
+      "description": "Git",
+      "alt": "Git"
+  },
+  {
+      "src": "/html.svg",
+      "description": "HTML5",
+      "alt": "HTML5"
+  },
+  {
+      "src": "/css.svg",
+      "description": "CSS3",
+      "alt": "CSS3"
+  },
+  {
+      "src": "/javascript.svg",
+      "description": "JavaScript",
+      "alt": "JavaScript"
+  },
+  {
+      "src": "/mongodb.svg",
+      "description": "MongoDB",
+      "alt": "MongoDB"
+  },
+  {
+      "src": "/npm.svg",
+      "description": "NPM",
+      "alt": "NPM"
+  },
+  {
+      "src": "/postgresql.svg",
+      "description": "PostgreSQL",
+      "alt": "PostgreSQL"
+  },
+  {
+      "src": "/vue.svg",
+      "description": "Vue",
+      "alt": "Vue"
+  },
+  {
+      "src": "/gatsby.svg",
+      "description": "Gatsby",
+      "alt": "Gatsby"
+  },
+  {
+      "src": "/wordpress.svg",
+      "description": "Wordpress",
+      "alt": "Wordpress"
+  }
+]
