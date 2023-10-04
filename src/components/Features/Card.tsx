@@ -31,7 +31,10 @@ const Card = ({
         <Heading className="pb-[20px] desktop:pb-[24px]" type="H3">
           {heading}
         </Heading>
-        <Paragraph className="mb-[20px] desktop:mb-[32px]" type="Body">
+        <Paragraph
+          className="mb-[20px] desktop:mb-[32px] line-clamp-3"
+          type="Body"
+        >
           {description}
         </Paragraph>
         <div className="desktop:flex desktop:justify-between] ">
