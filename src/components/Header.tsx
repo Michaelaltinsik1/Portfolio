@@ -1,13 +1,13 @@
 'use client';
 import Image from 'next/image';
 import { useState } from 'react';
-import Nav from './Nav';
+import Nav from '@/components/Nav';
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
   return (
     <header className="z-[1000] flex justify-between bg-secondary p-4 h-[135px] sticky top-0 left-0">
       <Image
-        className="desktop:ml-[32px]"
+        className="desktop:ml-[32px] aspect-square w-[100px] h-[100px]"
         src="/logo.png"
         width={100}
         height={100}

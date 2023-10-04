@@ -1,3 +1,4 @@
+'use client';
 import { useEffect, useState } from 'react';
 
 const TABLETBREAKPOINT = 769;
@@ -6,12 +7,14 @@ const DESKTOPBREAKPOINT = 1201;
 const DESKTOPEDGECASESBREAKPOINT = 1800;
 const XLDESKTOPBREAKPOINT = 2560;
 export const useBreakpoint = () => {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(0);
 
   useEffect(() => {
-    const handleWindowResize = () => setWidth(window.innerWidth);
-    window.addEventListener('resize', handleWindowResize);
-    return () => window.removeEventListener('resize', handleWindowResize);
+    if (window) {
+      const handleWindowResize = () => setWidth(window.innerWidth);
+      window.addEventListener('resize', handleWindowResize);
+      return () => window.removeEventListener('resize', handleWindowResize);
+    }
   }, []);
 
   // Return the width so we can use it in our components

@@ -1,8 +1,8 @@
 'use client';
-import Icon from '../Base/Icon';
-import Carousel from './Carousel';
-import { useBreakpoint } from './useBreakpoint';
-import icons from '../../utils/icons.json';
+import Icon from '@/base/Icon';
+import Carousel from '@/features/Carousel';
+import { useBreakpoint } from '@/features/useBreakpoint';
+import icons from '@/utils/icons.json';
 const IconsList = () => {
   const { isDesktop } = useBreakpoint();
   return (

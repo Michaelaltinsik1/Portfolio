@@ -1,6 +1,6 @@
 'use client';
-import { useTypewriter } from './useTypewriter';
-import Heading from '../Base/Heading';
+import { useTypewriter } from '@/features/useTypewriter';
+import Heading from '@/base/Heading';
 const TypeWriterRender = () => {
   const texts = ['Frontend developer.', 'Fullstack developer.'];
   const currentText = useTypewriter(texts);

@@ -2,8 +2,8 @@
 import type { TouchEvent } from 'react';
 import { useRef } from 'react';
 import { useEffect, useState } from 'react';
-import Icon from '../Base/Icon';
-import icons from '../../utils/icons.json';
+import Icon from '@/base/Icon';
+import icons from '@/utils/icons.json';
 
 const MINTOUCHMOVEMENT = 5;
 const MOBILENROFREVIEWCARDSCONTAINER = 3;

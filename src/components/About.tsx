@@ -1,16 +1,17 @@
-import Heading from './Base/Heading';
+import Heading from '@/base/Heading';
 
 import Image from 'next/image';
 import Michael from '../../public/michael.png';
-import Paragraph from './Base/Paragraph';
-import Button from './Base/Button';
-import IconsList from './Features/IconsList';
-import TypeWriterRender from './Features/TypewriterRender';
+import Paragraph from '@/base/Paragraph';
+import Button from '@/base/Button';
+import IconsList from '@/features/IconsList';
+import TypeWriterRender from '@/features/TypewriterRender';
+import CardList from './Features/CardList';
 const About = () => {
   return (
     <div
       id="about"
-      className="bg-secondary rounded-lg px-4 py-6 desktop:max-w-[1400px] desktop:mx-auto desktop:p-[80px] desktop:my-[80px] scroll-m-[350px] "
+      className="bg-secondary rounded-lg px-4 py-6 desktop:max-w-[1400px] desktop:mx-auto desktop:p-[80px] desktop:my-[80px] scroll-m-[250px] mx-4 my-[24px]"
     >
       <div className="grid desktop:grid-cols-cols-2 desktop:grid-rows-rows-3">
         {<TypeWriterRender />}
@@ -19,6 +20,7 @@ const About = () => {
             className="h-fit w-full rounded-xl max-w-[450px] mt-auto"
             src={Michael}
             alt="Picture of me"
+            priority
           />
         </div>
 

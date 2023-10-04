@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import Paragraph from './Paragraph';
-
+import Paragraph from '@/base/Paragraph';
 interface IconProps {
   src: string;
   alt: string;

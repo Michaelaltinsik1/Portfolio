@@ -23,7 +23,7 @@ const config: Config = {
         120: '120px',
       },
       boxShadow: {
-        shadow: '0px 3px 8px 0px #DAC0A3',
+        shadowCustom: '0px 3px 8px 0px #DAC0A3',
       },
     },
     gridTemplateColumns: {

@@ -1,6 +1,9 @@
 import React, { ReactNode } from 'react';
-import Loader from '../Features/Loader';
+import Loader from '@/features/Loader';
+
 interface ButtonProps {
+  href?: string;
+  isButton?: boolean;
   type: 'submit' | 'button';
   disabled?: boolean;
   className?: string;
@@ -12,6 +15,8 @@ interface ButtonProps {
 }
 
 const Button = ({
+  href = '',
+  isButton = true,
   type,
   disabled = false,
   className = '',
@@ -29,14 +34,26 @@ const Button = ({
     }
   };
   return (
-    <button
-      onClick={onClick}
-      className={`border border-solid  w-full h-[52px] px-4 desktop:w-fit font-body rounded-[4px] ${className} ${handleVariant()} `}
-      type={type}
-      disabled={disabled}
-    >
-      {loading ? <Loader /> : children}
-    </button>
+    <>
+      {isButton ? (
+        <button
+          onClick={onClick}
+          className={`border border-solid  w-full h-[52px] px-4 desktop:w-fit font-body rounded-[4px] ${className} ${handleVariant()} `}
+          type={type}
+          disabled={disabled}
+        >
+          {loading ? <Loader /> : children}
+        </button>
+      ) : (
+        <a
+          href={href}
+          target="_blank"
+          className={`flex items-center justify-center border border-solid  w-full h-[52px] px-4 desktop:w-fit font-body rounded-[4px] ${className} ${handleVariant()} `} //external link
+        >
+          {children}
+        </a>
+      )}
+    </>
   );
 };
 export default Button;
