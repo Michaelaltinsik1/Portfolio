@@ -37,9 +37,10 @@ const config: Config = {
       secondary: '#EADBC8',
       tertiary: '#DAC0A3',
       'primary-invert': '#0F2C59',
-      'primary-invert-hover': '#0d2750',
-      'primary-invert-active': '#0c2347',
+      'primary-invert-hover': '#0c2347',
+      'primary-invert-active': '#091a35',
       'secondary-invert': '#924607',
+      error: '#B71C1C',
     },
     fontSize: {
       H1: '40px',
