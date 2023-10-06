@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Contact from '@/components/Contact';
 export default function Home() {
   return (
-    <main id="top">
+    <main id="start">
       <Header />
       <div>
         <About />

@@ -2,7 +2,7 @@
 import { useTypewriter } from '@/features/useTypewriter';
 import Heading from '@/base/Heading';
 const TypeWriterRender = () => {
-  const texts = ['Frontend developer.', 'Fullstack developer.'];
+  const texts = ['Fullstack developer.'];
   const currentText = useTypewriter(texts);
   return (
     <Heading
@@ -11,7 +11,7 @@ const TypeWriterRender = () => {
     >
       Hi, I am
       <span className=" flex break-words">Michael Altinisik!</span>
-      <span className="text-secondary-invert flex break-words min-h-[45px]">
+      <span className="text-secondary-invert flex break-words min-h-[45px] desktop:min-h-[52px]">
         {currentText}
       </span>
     </Heading>

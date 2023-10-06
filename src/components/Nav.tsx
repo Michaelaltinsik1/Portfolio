@@ -27,7 +27,7 @@ const Nav = ({ isNavOpen, setIsNavOpen }: NavProps) => {
           <Link
             onClick={() => setIsNavOpen(false)}
             className="text-primary-invert text-navItemMobile desktop:text-navItem px-4 py-[20px] desktop:px-[32px] flex hover:underline underline-offset-[6px] decoration-primary-invert"
-            href="#about"
+            href="/#about"
           >
             About
           </Link>
@@ -36,7 +36,7 @@ const Nav = ({ isNavOpen, setIsNavOpen }: NavProps) => {
           <Link
             onClick={() => setIsNavOpen(false)}
             className="text-primary-invert text-navItemMobile desktop:text-navItem px-4 py-[20px] desktop:px-[32px] flex hover:underline underline-offset-[6px] decoration-primary-invert"
-            href="#projects"
+            href="/#projects"
           >
             Projects
           </Link>
@@ -45,7 +45,7 @@ const Nav = ({ isNavOpen, setIsNavOpen }: NavProps) => {
           <Link
             onClick={() => setIsNavOpen(false)}
             className="text-primary-invert text-navItemMobile desktop:text-navItem px-4 py-[20px] desktop:px-[32px] flex hover:underline underline-offset-[6px] decoration-primary-invert"
-            href="#contact"
+            href="/#contact"
           >
             Contact
           </Link>
