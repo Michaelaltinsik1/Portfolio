@@ -46,13 +46,10 @@ const Card = ({
         <Heading className="pb-[20px] desktop:pb-[24px]" type="H3">
           {heading}
         </Heading>
-        <Paragraph
-          className="mb-[20px] desktop:mb-[32px] line-clamp-3"
-          type="Body"
-        >
+        <Paragraph className="mb-[20px] desktop:mb-[32px]" type="Body">
           {description}
         </Paragraph>
-        <div className="desktop:flex desktop:justify-between] ">
+        <div className="desktop:flex desktop:justify-between] desktop:mt-[32px] mb-[20px] desktop:mb-[32px] ">
           {sourceCodeUrl && (
             <Button
               className="mb-4 desktop:flex-1 desktop:mr-[20px] desktop:mb-0"
@@ -70,7 +67,7 @@ const Card = ({
                 sourceCodeUrl && 'desktop:ml-[20px]'
               }`}
               type="button"
-              variant="primary"
+              variant="secondary"
               isButton={false}
               href={sitePreview}
             >
@@ -81,7 +78,7 @@ const Card = ({
               onClick={showVideo}
               className="desktop:flex-1 desktop:ml-[20px]"
               type="button"
-              variant="primary"
+              variant="secondary"
               href=""
               isButton={true}
             >
@@ -89,13 +86,6 @@ const Card = ({
             </Button>
           )}
         </div>
-        <Button
-          className="my-4 desktop:min-w-full desktop:mt-[32px] mb-[20px]"
-          type="button"
-          variant="secondary"
-        >
-          Read more
-        </Button>
         <Paragraph className="text-center font-light italic" type="Body">
           {languages}
         </Paragraph>

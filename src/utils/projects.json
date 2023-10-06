@@ -8,7 +8,7 @@
     "videoId":"-Y0XxFhMRpA",
     "langugaes":"React, Express.js, Node.js, TypeScript, Tailwind, MySQL, Prisma, Figma",
     "heading":"Employee management system",
-    "description":"A fullstack project were I use React, TypeScript and Tailwind for the frontend combined with various npm packages like react hook form and yup for validation. For the backend I use Express.js with MySQL and Prisma as an ORM with npm packets like bcrypt. I also made the design file myself on Figma."
+    "description":"A fullstack project where I use React, TypeScript and Tailwind for the frontend combined with various npm-packages like react hook form and yup for validation. For the backend, I use Express.js with MySQL and Prisma as an ORM with npm-packages like bcrypt. I also made the design file by myself on Figma."
   },
   {
     "imgSrc": "/puutarhuri.jpg",
@@ -19,7 +19,7 @@
     "videoId":"",
     "langugaes":"Next.js, TypeScript, Styled components, Figma",
     "heading":"Gardening website",
-    "description":"A frontend project were I use Next.js, TypeScript and Styled components. I created this project based on a request from a relative. I initially set up a design file on figma with a first draft on the project and asked for feedback."
+    "description":"A frontend project where I use Next.js, TypeScript and Styled components. I created this project based on a request from a relative. Initially, I set up a design file on Figma with a first draft on the project."
   },
   {
     "imgSrc": "/space-crew.jpg",
@@ -30,7 +30,7 @@
     "videoId":"",
     "langugaes":"Vue, Sass",
     "heading":"Space tourism website",
-    "description":"A frontend project were I use Vue and Sass. The project is based on a frontendmentor challenge were they provide the figma design files and my assignment was to try to mimic those design files as well as possible."
+    "description":"A frontend project where I use Vue and Sass. The project is based on a frontendmentor challenge where they provide the Figma design files, and my assignment was to try to mimic those design files as well as possible."
   },
   {
     "imgSrc": "/akupunktur.jpg",
@@ -41,7 +41,7 @@
     "videoId":"",
     "langugaes":"Remix, Typescript, Tailwind",
     "heading":"Acupuncture website",
-    "description":"Mostly a frontend project that I got assigned to do during my First intership at Kumpan. This website is created with Remix, TypeScript and Tailwind. Remix is a full stack web framework based on react. The design was created with Figma and was already finished before I started working on this project. The most important thing was to try to imitate the design as well as possible"
+    "description":"This is a frontend project that I was assigned to carry out from the beginning to the end all by myself on my first internship at Kumpan. I was provided mentorship by my supervisor and UI/UX designer. However the code within this project i completely my own work. This website is created with Remix, TypeScript and Tailwind. Remix is a fullstack web framework based on React. The design was created with Figma and was already complete before I started working on this project. The most important thing was to try to imitate the design as well as possible. The source code is handheld by Kumpan which means I do not have access to it."
   }
 ]
 
