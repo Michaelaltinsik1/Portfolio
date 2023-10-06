@@ -9,7 +9,7 @@ interface IconProps {
 const Icon = ({ src, alt, description }: IconProps) => {
   return (
     <div className="flex py-4 px-[20px] desktop:max-w-[120px] flex-col w-1/3 flex-shrink-0 tablet:w-1/6 items-center">
-      <Image src={src} alt={alt} width={80} height={80} />
+      <Image src={src} alt={alt} width={60} height={60} />
       <Paragraph className="text-center mt-1" type="Body">
         {description}
       </Paragraph>

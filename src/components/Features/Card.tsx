@@ -1,10 +1,16 @@
+'use client';
 import Button from '@/base/Button';
 import Heading from '@/base/Heading';
 import Image from 'next/image';
 import Paragraph from '../Base/Paragraph';
 import { StaticImageData } from 'next/image';
+import { useState } from 'react';
+import dynamic from 'next/dynamic';
 
+const YoutubeVideo = dynamic(() => import('./YoutubeVideo'));
+const Modal = dynamic(() => import('./Modal'));
 interface CardType {
+  videoId: string;
   imgSrc: StaticImageData;
   alt: string;
   isLiveSite?: boolean;
@@ -16,6 +22,7 @@ interface CardType {
 }
 
 const Card = ({
+  videoId,
   imgSrc,
   alt,
   isLiveSite,
@@ -25,6 +32,13 @@ const Card = ({
   heading,
   description,
 }: CardType) => {
+  const [isVideoVisibile, setIsVideoVisible] = useState<boolean>(false);
+  const closeVideo = () => {
+    setIsVideoVisible(false);
+  };
+  const showVideo = () => {
+    setIsVideoVisible(true);
+  };
   return (
     <div className="mx-auto rounded-lg mb-4 bg-primary shadow-shadowCustom desktop:mb-[64px] last-of-type:mb-0">
       <Image src={imgSrc} alt={alt} className="rounded-t-[8px]" />
@@ -64,6 +78,7 @@ const Card = ({
             </Button>
           ) : (
             <Button
+              onClick={showVideo}
               className="desktop:flex-1 desktop:ml-[20px]"
               type="button"
               variant="primary"
@@ -85,6 +100,11 @@ const Card = ({
           {languages}
         </Paragraph>
       </div>
+      {isVideoVisibile && videoId && (
+        <Modal handleOnClick={closeVideo}>
+          {isVideoVisibile && <YoutubeVideo videoId={videoId} />}
+        </Modal>
+      )}
     </div>
   );
 };

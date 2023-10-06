@@ -19,6 +19,7 @@ const CardList = () => {
           sourceCodeUrl={project.sourceCodeUrl}
           heading={project.heading}
           languages={project.langugaes}
+          videoId={project.videoId}
         />
       ))}
     </div>
