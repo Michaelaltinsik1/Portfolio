@@ -1,43 +1,43 @@
 [
   {
-    "imgSrc": "/space-crew.jpg",
-    "alt":"SpaceTourism site",
+    "imgSrc": "/ems.jpg",
+    "alt":"Employee management system",
+    "isLiveSite":false,
+    "sourceCodeUrl":"https://github.com/Michaelaltinsik1/EMS",
+    "sitePreview":"",
+    "langugaes":"React, Express.js, Node.js, TypeScript, Tailwind, MySQL, Prisma, Figma",
+    "heading":"Employee management system",
+    "description":"A fullstack project were I use React, TypeScript and Tailwind for the frontend combined with various npm packets like react hook form and yup for validation. For the backend I use Express.js with MySQL and Prisma as an ORM with npm packets like bcrypt. I also made the design file myself on Figma."
+  },
+  {
+    "imgSrc": "/puutarhuri.jpg",
+    "alt":"Gardening website",
     "isLiveSite":true,
-    "sourceCodeUrl":"https://github.com/Michaelaltinsik1/SpaceTourism",
-    "sitePreview":"https://michael-spacetourism.netlify.app/",
-    "langugaes":"Vue, Sass",
-    "heading":"Space Tourism",
-    "description":"A frontend project were I use Vue and Sass. The project is based on a frontendmentor challenge were they provide the figma design files and my assignment was to try to mimic those design files as well as possible."
+    "sourceCodeUrl":"https://github.com/Michaelaltinsik1/Puutarhuri-Kari-Alppi",
+    "sitePreview":"https://puutarhuri-kari-alppi.vercel.app/",
+    "langugaes":"Next.js, TypeScript, Styled components, Figma",
+    "heading":"Gardening website",
+    "description":"A frontend project were I use Next.js, TypeScript and Styled components. I created this project based on a request from a relative. I initially set up a design file on figma with a first draft on the project and asked for feedback."
   },
   {
     "imgSrc": "/space-crew.jpg",
-    "alt":"SpaceTourism site",
+    "alt":"SpaceTourism website",
     "isLiveSite":true,
     "sourceCodeUrl":"https://github.com/Michaelaltinsik1/SpaceTourism",
     "sitePreview":"https://michael-spacetourism.netlify.app/",
     "langugaes":"Vue, Sass",
-    "heading":"Space Tourism",
+    "heading":"Space tourism website",
     "description":"A frontend project were I use Vue and Sass. The project is based on a frontendmentor challenge were they provide the figma design files and my assignment was to try to mimic those design files as well as possible."
   },
   {
-    "imgSrc": "/space-crew.jpg",
-    "alt":"SpaceTourism site",
+    "imgSrc": "/akupunktur.jpg",
+    "alt":"Acupuncture website",
     "isLiveSite":true,
-    "sourceCodeUrl":"https://github.com/Michaelaltinsik1/SpaceTourism",
-    "sitePreview":"https://michael-spacetourism.netlify.app/",
-    "langugaes":"Vue, Sass",
-    "heading":"Space Tourism",
-    "description":"A frontend project were I use Vue and Sass. The project is based on a frontendmentor challenge were they provide the figma design files and my assignment was to try to mimic those design files as well as possible."
-  },
-  {
-    "imgSrc": "/space-crew.jpg",
-    "alt":"SpaceTourism site",
-    "isLiveSite":true,
-    "sourceCodeUrl":"https://github.com/Michaelaltinsik1/SpaceTourism",
-    "sitePreview":"https://michael-spacetourism.netlify.app/",
-    "langugaes":"Vue, Sass",
-    "heading":"Space Tourism",
-    "description":"A frontend project were I use Vue and Sass. The project is based on a frontendmentor challenge were they provide the figma design files and my assignment was to try to mimic those design files as well as possible."
+    "sourceCodeUrl":"",
+    "sitePreview":"https://www.akupunktur.se/",
+    "langugaes":"Remix, Typescript, Tailwind",
+    "heading":"Acupuncture website",
+    "description":"Mostly a frontend project that I got assigned to do during my First intership at Kumpan. This website is created with Remix, TypeScript and Tailwind. Remix is a full stack web framework based on react. The design was created with Figma and was already finished before I started working on this project. The most important thing was to try to imitate the design as well as possible"
   }
 ]
 

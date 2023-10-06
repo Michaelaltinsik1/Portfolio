@@ -29,7 +29,7 @@ const Form = ({
     onSubmit(methods.getValues());
   };
   useEffect(() => {
-    if (formState.isSubmitted) {
+    if (formState.isValid && formState.isSubmitSuccessful) {
       reset();
     }
   }, [formState, reset]);

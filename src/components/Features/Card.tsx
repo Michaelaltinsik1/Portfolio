@@ -3,6 +3,7 @@ import Heading from '@/base/Heading';
 import Image from 'next/image';
 import Paragraph from '../Base/Paragraph';
 import { StaticImageData } from 'next/image';
+
 interface CardType {
   imgSrc: StaticImageData;
   alt: string;
@@ -38,18 +39,22 @@ const Card = ({
           {description}
         </Paragraph>
         <div className="desktop:flex desktop:justify-between] ">
-          <Button
-            className="mb-4 desktop:flex-1 desktop:mr-[20px] desktop:mb-0"
-            type="button"
-            variant="primary"
-            isButton={false}
-            href={sourceCodeUrl}
-          >
-            Check out source code
-          </Button>
+          {sourceCodeUrl && (
+            <Button
+              className="mb-4 desktop:flex-1 desktop:mr-[20px] desktop:mb-0"
+              type="button"
+              variant="primary"
+              isButton={false}
+              href={sourceCodeUrl}
+            >
+              Check out source code
+            </Button>
+          )}
           {isLiveSite ? (
             <Button
-              className="desktop:flex-1 desktop:ml-[20px]"
+              className={`desktop:flex-1 ${
+                sourceCodeUrl && 'desktop:ml-[20px]'
+              }`}
               type="button"
               variant="primary"
               isButton={false}
@@ -62,8 +67,8 @@ const Card = ({
               className="desktop:flex-1 desktop:ml-[20px]"
               type="button"
               variant="primary"
-              href={sitePreview}
-              isButton={false}
+              href=""
+              isButton={true}
             >
               Check out video
             </Button>

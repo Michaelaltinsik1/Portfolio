@@ -239,7 +239,7 @@ const Carousel = () => {
           ))}
         </div>
       </div>
-      <div className="mx-4 mt-8 min-h-[6px] rounded-[11px bg-tertiary min-w-full desktop:hidden">
+      <div className="mx-4 mt-8 min-h-[6px] rounded-[11px] bg-tertiary desktop:hidden">
         <div
           style={{ width: `calc(${value}%)` }}
           className={`min-h-[6px] rounded-[4px] bg-primary-invert`}

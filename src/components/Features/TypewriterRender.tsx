@@ -11,8 +11,8 @@ const TypeWriterRender = () => {
     >
       Hi, I am
       <span className=" flex break-words">Michael Altinisik!</span>
-      <span className="text-secondary-invert flex break-words">
-        {currentText} &nbsp;
+      <span className="text-secondary-invert flex break-words min-h-[45px]">
+        {currentText}
       </span>
     </Heading>
   );

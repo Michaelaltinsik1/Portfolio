@@ -6,7 +6,8 @@ import Paragraph from '@/base/Paragraph';
 import Button from '@/base/Button';
 import IconsList from '@/features/IconsList';
 import TypeWriterRender from '@/features/TypewriterRender';
-import CardList from './Features/CardList';
+
+import Link from 'next/link';
 const About = () => {
   return (
     <div
@@ -31,16 +32,20 @@ const About = () => {
           expectations.
         </Paragraph>
         <div className="mt-[32px] desktop:mt-[40px]">
-          <Button
-            type="button"
-            variant="primary"
-            className="mb-[20px] desktop:mr-[32px] desktop:mb-0"
-          >
-            Contact me
-          </Button>
-          <Button type="button" variant="secondary">
-            Check out my projects
-          </Button>
+          <Link href="#contact">
+            <Button
+              type="button"
+              variant="primary"
+              className="mb-[20px] desktop:mr-[32px] desktop:mb-0"
+            >
+              Contact me
+            </Button>
+          </Link>
+          <Link href="#projects">
+            <Button type="button" variant="secondary">
+              Check out my projects
+            </Button>
+          </Link>
         </div>
       </div>
       <Heading className="mt-[32px] mb-[16px] desktop:mb-[24px]" type="H2">
