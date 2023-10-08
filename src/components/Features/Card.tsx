@@ -92,7 +92,7 @@ const Card = ({
       </div>
       {isVideoVisibile && videoId && (
         <Modal handleOnClick={closeVideo}>
-          {isVideoVisibile && <YoutubeVideo videoId={videoId} />}
+          <YoutubeVideo videoId={videoId} title={heading} />
         </Modal>
       )}
     </div>
