@@ -1,7 +1,10 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import GoogleAnalytics from '@/components/Features/GoogleAnalytics';
+// import GoogleAnalytics from '@/components/Features/GoogleAnalytics';
+// import TagManager from '@/utils/gtmComponent';
+import Analytics from '@/components/Features/Analytics';
+import { Suspense } from 'react';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,9 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html className="scroll-smooth" lang="en">
-      {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS && (
+      {/* {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS && (
         <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
-      )}
+      )} */}
+      <Suspense>
+        <Analytics />
+      </Suspense>
       <body className={`${inter.className} bg-primary`}>{children}</body>
     </html>
   );
