@@ -7,7 +7,7 @@ const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
   return (
     <header className="z-[1000] flex justify-between bg-secondary p-4 h-[135px] sticky top-0 left-0">
-      <Link className="desktop:ml-[32px] l" href="/#start">
+      <Link className="nav-link desktop:ml-[32px] l" href="/#start">
         <Image
           className="aspect-square w-[100px] h-[100px] "
           src="/logo.png"
