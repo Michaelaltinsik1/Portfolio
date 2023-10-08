@@ -52,7 +52,7 @@ const Card = ({
         <div className="desktop:flex desktop:justify-between] desktop:mt-[32px] mb-[20px] desktop:mb-[32px] ">
           {sourceCodeUrl && (
             <Button
-              className="mb-4 desktop:flex-1 desktop:mr-[20px] desktop:mb-0"
+              className="link-source-code mb-4 desktop:flex-1 desktop:mr-[20px] desktop:mb-0"
               type="button"
               variant="primary"
               isButton={false}
@@ -63,7 +63,7 @@ const Card = ({
           )}
           {isLiveSite ? (
             <Button
-              className={`desktop:flex-1 ${
+              className={`link-live-site desktop:flex-1 ${
                 sourceCodeUrl && 'desktop:ml-[20px]'
               }`}
               type="button"
@@ -76,7 +76,7 @@ const Card = ({
           ) : (
             <Button
               onClick={showVideo}
-              className="desktop:flex-1 desktop:ml-[20px]"
+              className="link-video desktop:flex-1 desktop:ml-[20px]"
               type="button"
               variant="secondary"
               href=""

@@ -36,13 +36,13 @@ const About = () => {
             <Button
               type="button"
               variant="primary"
-              className="mb-[20px] desktop:mr-[32px] desktop:mb-0"
+              className="cta-contact mb-[20px] desktop:mr-[32px] desktop:mb-0"
             >
               Contact me
             </Button>
           </Link>
           <Link href="#projects">
-            <Button type="button" variant="secondary">
+            <Button className="cta-projects" type="button" variant="secondary">
               Check out my projects
             </Button>
           </Link>
