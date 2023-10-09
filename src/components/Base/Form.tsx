@@ -36,7 +36,7 @@ const Form = ({
 
   return (
     <form
-      className={`flex flex-col ${className}`}
+      className={`contact-form flex flex-col ${className}`}
       onSubmit={handleSubmit(getFormFields)}
     >
       {React.Children.map(children, (child) => {
