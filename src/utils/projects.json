@@ -22,7 +22,7 @@
     "description":"A frontend project where I use Next.js, TypeScript and Styled components. I created this project based on a request from a relative. Initially, I set up a design file on Figma with a first draft on the project."
   },
   {
-    "imgSrc": "/space-crew.jpg",
+    "imgSrc": "/space-tourism.jpg",
     "alt":"SpaceTourism website",
     "isLiveSite":true,
     "sourceCodeUrl":"https://github.com/Michaelaltinsik1/SpaceTourism",
